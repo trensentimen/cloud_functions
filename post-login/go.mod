@@ -1,10 +1,10 @@
-module github.com/trensentimen/cloud_functions
+module github.com/trensentimen/cloud_functions/post-login
 
 go 1.21.3
 
 require (
 	github.com/GoogleCloudPlatform/functions-framework-go v1.8.0
-	github.com/trensentimen/be_trensentimen v0.0.2
+	github.com/trensentimen/be_trensen v0.0.2
 )
 
 require (

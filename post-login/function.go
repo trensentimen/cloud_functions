@@ -1,4 +1,4 @@
-package trensentimen
+package trensen_login
 
 import (
 	"fmt"
@@ -6,14 +6,14 @@ import (
 
 	"github.com/GoogleCloudPlatform/functions-framework-go/functions"
 
-	be_trensentimen "github.com/trensentimen/be_trensentimen"
+	be_trensentimen "github.com/trensentimen/be_trensen"
 )
 
 func init() {
-	functions.HTTP("Trensentimen", TrensentimenPost)
+	functions.HTTP("post_login", TrensentimenLogin)
 }
 
-func TrensentimenPost(w http.ResponseWriter, r *http.Request) {
+func TrensentimenLogin(w http.ResponseWriter, r *http.Request) {
 	// Set CORS headers for the preflight request
 	if r.Method == http.MethodOptions {
 		w.Header().Set("Access-Control-Allow-Origin", "https://jscroot.github.io")
