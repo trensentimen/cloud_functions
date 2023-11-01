@@ -1,4 +1,4 @@
-package login
+package register
 
 import (
 	"fmt"
@@ -11,10 +11,10 @@ import (
 )
 
 func init() {
-	functions.HTTP("login", TrensentimenLogin)
+	functions.HTTP("register", TrensentimenRegister)
 }
 
-func TrensentimenLogin(w http.ResponseWriter, r *http.Request) {
+func TrensentimenRegister(w http.ResponseWriter, r *http.Request) {
 	// Set CORS headers for the preflight request
 	if r.Method == http.MethodOptions {
 		w.Header().Set("Access-Control-Allow-Origin", "https://trensentimen.github.io")
@@ -26,7 +26,7 @@ func TrensentimenLogin(w http.ResponseWriter, r *http.Request) {
 	}
 	// Set CORS headers for the main request.
 	w.Header().Set("Access-Control-Allow-Origin", "https://trensentimen.github.io")
-	fmt.Fprintf(w, module.GCFHandlerSignin("PASETOPRIVATEKEY", "MONGOSTRING", "trensentimen", "user", r))
+	fmt.Fprintf(w, module.GCFHandlerSignup("MONGOSTRING", "trensentimen", "user", r))
 	// fmt.Fprintf(w, be_trensentimen.GCFPostHandler("PASETOPRIVATEKEY", "MONGOSTRING", "trensentimen", "user", r))
 
 }
