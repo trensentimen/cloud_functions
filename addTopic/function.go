@@ -1,4 +1,4 @@
-package getAllTopic
+package addTopic
 
 import (
 	"fmt"
@@ -26,7 +26,7 @@ func TrensentimenGetAllTopic(w http.ResponseWriter, r *http.Request) {
 	}
 	// Set CORS headers for the main request.
 	w.Header().Set("Access-Control-Allow-Origin", "https://trensentimen.github.io")
-	fmt.Fprintf(w, module.GCFHandlerGetAllTopic("PASETOPUBLICKEY", "MONGOSTRING", "trensentimen", "topic", r))
+	fmt.Fprintf(w, module.GCFHandlerAddTopic("PASETOPUBLICKEY", "MONGOSTRING", "trensentimen", "topic", r))
 	// fmt.Fprintf(w, be_trensentimen.GCFPostHandler("PASETOPRIVATEKEY", "MONGOSTRING", "trensentimen", "user", r))
 
 }

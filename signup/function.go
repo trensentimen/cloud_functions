@@ -1,4 +1,4 @@
-package register
+package signup
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 )
 
 func init() {
-	functions.HTTP("register", TrensentimenRegister)
+	functions.HTTP("signup", TrensentimenRegister)
 }
 
 func TrensentimenRegister(w http.ResponseWriter, r *http.Request) {

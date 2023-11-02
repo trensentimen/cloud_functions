@@ -1,4 +1,4 @@
-module github.com/trensentimen/cloud_functions/getAllTopic
+module github.com/trensentimen/cloud_functions/addTopic
 
 go 1.21.3
 
