@@ -38,7 +38,7 @@ func TrensentimenPost2(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte(response))
 
-	// a := `&{0xc000368bd0 0xc0000e2500 0xc0000850c0 0x4ca660 false false false false {{} 0} {0 0} 0xc000085100 {0xc00036e1c0 map[] false false} map[Access-Control-Allow-Origin:[https://trensentimen.github.io]] true 0 -1 0 false false false [] {{} 0} [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0 0 0] [0 0 0] 0xc0003f80e0 {{} 0}} {"status":true,"token":"v4.public.eyJleHAiOiIyMDIzLTEwLTE4VDEyOjI4OjU0WiIsImlhdCI6IjIwMjMtMTAtMThUMTA6Mjg6NTRaIiwiaWQiOiJkYW5pIiwibmJmIjoiMjAyMy0xMC0xOFQxMDoyODo1NFoifeXUSmW7z6AuE0cQ46ygS4Lf-66BEjJ-4QhkLhae0iin-DB_K8mRnaONo1c7EwCxh4snrJluUuNT21ryXV2Cpw4","message":"Selamat Datang"}"timestamp: "2023-10-18T10:28:54.361108Z`
+	// a := `&{0xc000368bd0 0xc0000e2500 0xc0000850c0 0x4ca660 false false false false {{} 0} {0 0} 0xc000085100 {0xc00036e1c0 map[] false false} map[Access-Control-Allow-Origin:[https://trensentimen.my.id]] true 0 -1 0 false false false [] {{} 0} [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0] [0 0 0 0 0 0 0 0 0 0] [0 0 0] 0xc0003f80e0 {{} 0}} {"status":true,"token":"v4.public.eyJleHAiOiIyMDIzLTEwLTE4VDEyOjI4OjU0WiIsImlhdCI6IjIwMjMtMTAtMThUMTA6Mjg6NTRaIiwiaWQiOiJkYW5pIiwibmJmIjoiMjAyMy0xMC0xOFQxMDoyODo1NFoifeXUSmW7z6AuE0cQ46ygS4Lf-66BEjJ-4QhkLhae0iin-DB_K8mRnaONo1c7EwCxh4snrJluUuNT21ryXV2Cpw4","message":"Selamat Datang"}"timestamp: "2023-10-18T10:28:54.361108Z`
 
 	type ResponseJson struct {
 		Status  bool   `json:"status"`

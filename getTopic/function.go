@@ -1,4 +1,4 @@
-package updateTopic
+package getTopic
 
 import (
 	"fmt"
@@ -11,10 +11,10 @@ import (
 )
 
 func init() {
-	functions.HTTP("UpdateTopic", TrensentimenUpdateTopic)
+	functions.HTTP("GetTopic", TrensentimenGetTopic)
 }
 
-func TrensentimenUpdateTopic(w http.ResponseWriter, r *http.Request) {
+func TrensentimenGetTopic(w http.ResponseWriter, r *http.Request) {
 	// Set CORS headers for the preflight request
 	if r.Method == http.MethodOptions {
 		w.Header().Set("Access-Control-Allow-Origin", "https://trensentimen.my.id")
@@ -26,7 +26,7 @@ func TrensentimenUpdateTopic(w http.ResponseWriter, r *http.Request) {
 	}
 	// Set CORS headers for the main request.
 	w.Header().Set("Access-Control-Allow-Origin", "https://trensentimen.my.id")
-	fmt.Fprintf(w, module.GCFHandlerUpdateTopic("PASETOPUBLICKEY", "MONGOSTRING", "trensentimen", "topic", r))
+	fmt.Fprintf(w, module.GCFHandlerGetTopic("PASETOPUBLICKEY", "MONGOSTRING", "trensentimen", "topic", r))
 	// fmt.Fprintf(w, be_trensentimen.GCFPostHandler("PASETOPRIVATEKEY", "MONGOSTRING", "trensentimen", "user", r))
 
 }
