@@ -1,4 +1,4 @@
-module github.com/trensentimen/cloud_functions/signup
+module github.com/trensentimen/cloud_functions/sendOtp
 
 go 1.21.3
 

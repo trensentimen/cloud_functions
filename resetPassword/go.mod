@@ -1,10 +1,10 @@
-module github.com/trensentimen/cloud_functions/signup
+module github.com/trensentimen/cloud_functions/resetPassword
 
 go 1.21.3
 
 require (
 	github.com/GoogleCloudPlatform/functions-framework-go v1.8.0
-	github.com/trensentimen/be_trensen v0.1.7
+	github.com/trensentimen/be_trensen v0.1.9
 )
 
 require (
