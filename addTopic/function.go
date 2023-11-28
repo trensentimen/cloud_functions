@@ -11,13 +11,12 @@ import (
 )
 
 func init() {
-	functions.HTTP("getAllTopic", TrensentimenGetAllTopic)
+	functions.HTTP("addTopic", AddTopic)
 }
 
-func TrensentimenGetAllTopic(w http.ResponseWriter, r *http.Request) {
+func AddTopic(w http.ResponseWriter, r *http.Request) {
 	// Set CORS headers for the preflight request
 	if r.Method == http.MethodOptions {
-		w.Header().Set("Access-Control-Allow-Origin", "https://trensentimen.my.id")
 		w.Header().Set("Access-Control-Allow-Origin", "https://trensentimen.my.id")
 		w.Header().Set("Access-Control-Allow-Methods", "POST")
 		w.Header().Set("Access-Control-Allow-Headers", "Content-Type,Authorization,Token")
