@@ -894,6 +894,8 @@ github.com/stretchr/testify v1.8.1 h1:w7B6lhMri9wdJUVmEZPGGhZzrYTPvgJArz7wNPgYKs
 github.com/stretchr/testify v1.8.1/go.mod h1:w2LPCIKwWwSfY2zedu0+kehJoqGctiVI29o6fzry7u4=
 github.com/trensentimen/be_trensen v0.2.8 h1:M4knbGwzrb62JBLp1nA96A4zaCyFu5s42NVQ4sTdumc=
 github.com/trensentimen/be_trensen v0.2.8/go.mod h1:gblDYgKKAIoNcxXHHUfNwO/NKEZRzl2C/ryWj7UR1SQ=
+github.com/trensentimen/be_trensen v0.2.9 h1:vAzzWfJ/wCg6XLPqCFpGVFMYDD2b7uDjRrFDeiatlXo=
+github.com/trensentimen/be_trensen v0.2.9/go.mod h1:hzp5nJPGWhuq4n1TglBZzr50Zx1Vv6h+m24GDodsWec=
 github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
 github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=
 github.com/whatsauth/watoken v0.1.2 h1:dGSEFjP2I+BRbLIq84mJ6Rwgx7B/OwBpKtZJr4dQSOs=

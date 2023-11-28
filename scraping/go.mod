@@ -4,7 +4,7 @@ go 1.21.3
 
 require (
 	github.com/GoogleCloudPlatform/functions-framework-go v1.8.0
-	github.com/trensentimen/be_trensen v0.2.8
+	github.com/trensentimen/be_trensen v0.2.9
 )
 
 require (
