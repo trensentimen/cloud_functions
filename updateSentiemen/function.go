@@ -26,6 +26,6 @@ func TrensentimenUpdateSentimen(w http.ResponseWriter, r *http.Request) {
 	}
 	// Set CORS headers for the main request.
 	w.Header().Set("Access-Control-Allow-Origin", "https://trensentimen.my.id")
-	fmt.Fprintf(w, module.GCFHandlerUpdateSentimen("MONGOSTRING", "trensentimen", "user", r))
+	fmt.Fprintf(w, module.GCFHandlerUpdateSentimen("PASETOPUBLICKEY", "MONGOSTRING", "trensentimen", r))
 	// fmt.Fprintf(w, be_trensentimen.GCFPostHandler("PASETOPRIVATEKEY", "MONGOSTRING", "trensentimen", "user", r))
 }
